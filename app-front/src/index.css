@@ -14,8 +14,17 @@ body {
     margin: 0;
     background-color: #f4f6fa;
     overflow-y: scroll;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
-
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
 header {
     grid-area: header;
     padding: 20px;
@@ -76,6 +85,20 @@ ul li a {
     display: block;
     padding: 3px;
 }
+button {
+    background-color: slategrey;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
 
 #root>nav>ul li a {
     display: block;
@@ -112,6 +135,7 @@ ul li a {
         flex-direction: column;
     }
 }
+
 
 @media (min-width: 1500px) {
     body {
