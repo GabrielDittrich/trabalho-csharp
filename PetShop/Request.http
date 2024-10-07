@@ -1,0 +1,101 @@
+// ***** ANIMAIS ******
+
+### GET
+GET http://localhost:5119
+
+### GET
+GET http://localhost:5119/animais
+
+
+### Requisição POST
+POST http://localhost:5119/animais
+Content-Type: application/json
+
+{
+    "NomeAnimal" : "Belinha",
+    "Raca" : "Pintcher"
+}
+
+### Requisição PUT
+PUT http://localhost:5119/animais/1
+Content-Type: application/json
+
+{
+    "NomeAnimal" : "Johnnynho",
+    "Raca" : "Pit-bul"
+}
+    
+
+### Requisição DELETE
+DELETE  http://localhost:5119/animais/1
+
+
+// ****** PESSOAS *****        
+
+### Requisição GET
+GET http://localhost:5119/pessoas 
+Content-Type: application/json
+
+{
+    "Nome" : "João",
+    "Telefone" : "994294",
+    "Email" : "joao@cs.up.edu"
+}
+
+### Requisição POST
+POST http://localhost:5119/pessoas 
+Content-Type: application/json
+
+{
+    "Nome": "João",
+    "Telefone": "998764",
+    "Email": "joao@email.com"
+}
+
+### Requisição PUT
+PUT http://localhost:5119/pessoas/2 
+Content-Type: application/json
+
+{
+    "Nome": "julia",
+    "Telefone": "996653",
+    "Email": "julia@gmail.com"
+}
+
+### Requisição DELETE
+DELETE  http://localhost:5119/pessoas/1
+
+
+
+// ****** PRODUTOS ****** 
+
+### Requisição GET
+GET http://localhost:5119/produtos 
+Content-Type: application/json
+
+{
+    "Nome" : "João",
+    "Telefone" : "994294",
+    "Email" : "joao@cs.up.edu"
+}
+
+### POST
+POST http://localhost:5119/produtos 
+Content-Type: application/json
+
+{
+    "NomeProduto": "Macarrão",
+    "Descricao": "Macarrão de Parafuso"
+}
+
+### PUT
+PUT http://localhost:5119/produtos/4
+Content-Type: application/json
+
+{
+    "NomeProduto" : "Peixe",
+    "Descricao" : "Salmão"
+}
+
+### DELETE
+DELETE  http://localhost:5119/produtos/3
