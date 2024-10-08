@@ -20,6 +20,11 @@
   margin: 10px 0;
   display: inline-block;
 }
+/* TABELA */
+table {
+  width: 100%; /* Define a tabela para ocupar 100% da largura do contêiner */
+  border-collapse: collapse;
+}
 
 /* MENU LATERAL */
 main > div > aside {

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.85ff381a.css",
+    "main.js": "/static/js/main.c8f80ea1.js",
+    "static/media/golden-retriever.jpg": "/static/media/golden-retriever.3a02ea3a4058bc5c5a53.jpg",
+    "index.html": "/index.html",
+    "main.85ff381a.css.map": "/static/css/main.85ff381a.css.map",
+    "main.c8f80ea1.js.map": "/static/js/main.c8f80ea1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85ff381a.css",
+    "static/js/main.c8f80ea1.js"
+  ]
+}
