@@ -1,79 +1,116 @@
-/* TABELA */
-table {
-  width: 100%; /* Define a tabela para ocupar 100% da largura do contêiner */
-  border-collapse: collapse;
+/* ESTRUTURA DA PÁGINA */
+#root > main > div.cadastros {
+  display: flex;
+  margin: 20px 50px 20px 20px;
 }
-/* Estilo para os botões */
-main > div > button {
-  width: 100px;
-  margin: 20px 10px 20px 0; /* Margens: topo, direita, baixo, esquerda */
+
+#root > main > div > div.conteudo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#root > main > div > div > h3 {
+  padding: 0 3px;
+}
+
+#root > main > div > div > button {
+  width: 135px;
+  padding: 5px;
+  margin: 10px 0;
   display: inline-block;
 }
 
-/* Adiciona espaço entre os botões e a tabela */
-table {
-  margin-top: 20px; /* Ajuste o valor conforme necessário */
+/* MENU LATERAL */
+main > div > aside {
+  margin-right: 30px;
 }
 
+main > div > aside > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+main > div > aside > ul > li {
+  width: 150px;
+  background-color: #ede2a9;
+  margin: 1px;
+}
+
+main > div > aside > ul > li > a {
+  font-size: 10pt;
+  text-align: left;
+  padding-left: 20px;
+}
+
+main > div > aside > ul > li > a:hover {
+  color: #2a95f3;
+}
+
+main > div > aside > ul > li > a.active {
+  color: #ffffff;
+  background-color: #dec85c;
+}
+
+/* FORMULÁRIO */
+form > * {
+  display: block;
+  width: 70%;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+form > input,
+form > button {
+  padding: 5px;
+}
+
+label,
+fieldset {
+  margin-top: 10px;
+}
+
+form > button {
+  width: 100px;
+  margin: 20px 10px 20px 0;
+  display: inline-block;
+}
+
+main > div > button {
+  width: 100px;
+  margin: 10px 0 20px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+/* TABELA */
+table,
 tbody,
 th,
 td {
+  border-collapse: collapse;
   border: 1px solid #aeaeae;
-  padding: 8px; /* Aumentar o padding para melhorar a legibilidade */
 }
 
-/* Estilos para os cabeçalhos da tabela */
-th {
-  background-color: gray; /* Cor de fundo dos cabeçalhos */
-  color: white; /* Cor do texto dos cabeçalhos */
-  text-align: center; /* Centraliza o texto nos cabeçalhos */
-  font-weight: bold; /* Deixa o texto em negrito */
+table > tbody > tr > th,
+table > tbody > tr > td {
+  padding: 3px !important;
 }
 
-tbody > tr > th,
-tbody > tr > td {
-  padding: 8px; /* Aumentar o padding para melhorar a legibilidade */
-}
-
-tbody > tr > th:nth-child(1),
-tbody > tr > td:nth-child(1) {
+table > tbody > tr > th:nth-child(1),
+table > tbody > tr > td:nth-child(1) {
   text-align: center;
 }
 
-tbody > tr > th:nth-child(3),
-tbody > tr > td:nth-child(3) {
+table > tbody > tr > th:nth-child(3),
+table > tbody > tr > td:nth-child(3) {
   text-align: center;
   width: 230px;
 }
 
-tbody > tr > td > button {
+table > tbody > tr > td > button {
   width: 100px;
   display: inline-block;
   padding: 3px;
   margin-right: 5px;
-}
-
-/* Responsividade para tabelas */
-@media (max-width: 768px) {
-  table,
-  tbody,
-  th,
-  td {
-    display: block; /* Exibe as células como blocos em telas menores */
-    width: 100%; /* Ocupa 100% da largura */
-  }
-
-  tbody > tr {
-    margin-bottom: 1rem; /* Espaçamento entre linhas */
-  }
-
-  tbody > tr > td {
-    text-align: left; /* Alinha o texto à esquerda para melhor legibilidade */
-    padding: 10px; /* Adiciona padding para uma melhor aparência */
-    box-sizing: border-box; /* Garante que o padding não afete a largura */
-  }
-
-  tbody > tr > th {
-    display: none; /* Oculta os cabeçalhos em dispositivos pequenos */
-  }
 }
