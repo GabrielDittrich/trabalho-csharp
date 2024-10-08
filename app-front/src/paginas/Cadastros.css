@@ -22,10 +22,10 @@
 }
 /* TABELA */
 table {
-  width: 100%; /* Define a tabela para ocupar 100% da largura do contêiner */
+  width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
-
 /* MENU LATERAL */
 main > div > aside {
   margin-right: 30px;
@@ -59,16 +59,20 @@ main > div > aside > ul > li > a.active {
 
 /* FORMULÁRIO */
 form > * {
+  position: center;
   display: block;
   width: 70%;
   box-sizing: border-box;
   margin-top: 5px;
+  margin-left: 10vw;
+  border-radius: 8px; /* Arredondar cantos */
 }
 
 form > input,
 form > button {
   padding: 5px;
 }
+
 
 label,
 fieldset {
@@ -101,7 +105,14 @@ table > tbody > tr > th,
 table > tbody > tr > td {
   padding: 3px !important;
 }
-
+th, td {
+  border: 1px solid #aeaeae;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2; /* Um pouco de cor de fundo para cabeçalhos */
+}
 table > tbody > tr > th:nth-child(1),
 table > tbody > tr > td:nth-child(1) {
   text-align: center;

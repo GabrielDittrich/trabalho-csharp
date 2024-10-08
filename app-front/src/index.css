@@ -29,6 +29,7 @@ header {
     grid-area: header;
     padding: 20px;
 }
+
 button {
     background-color: slategrey;
     color: white;
