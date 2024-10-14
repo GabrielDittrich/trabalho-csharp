@@ -31,7 +31,8 @@ public static class PetShopApi
             }
             animal.NomeAnimal = animalAlterado.NomeAnimal;
             animal.Raca = animalAlterado.Raca;
-
+            animal.Porte = animalAlterado.Porte;
+            
             //update....
             await db.SaveChangesAsync();
 

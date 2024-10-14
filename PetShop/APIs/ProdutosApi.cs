@@ -34,7 +34,8 @@ public static class ProdutosApi
             }
             produto.NomeProduto = produtoAlterada.NomeProduto;
             produto.Descricao = produtoAlterada.Descricao;
-
+            produto.Preco = produtoAlterada.Preco;
+            
             //update....
             await db.SaveChangesAsync();
 
