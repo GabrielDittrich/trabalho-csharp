@@ -36,13 +36,19 @@ Clone o repositório:
 - git clone <URL do repositório>
 - cd <nome do repositório>
 
-Restaure as dependências do projeto:
+## Restaure as dependências do projeto:
+### Parte C#:
 - dotnet restore
-
 Configure o banco de dados MySQL. Crie um banco de dados chamado mysql (ou o nome que preferir) e configure a string de conexão no Program.cs com suas credenciais.
+
 Execute a aplicação:
 - dotnet run
 
+### Parte React:
+- npm install
+
+Execute a aplicação:
+- npm start
 Acesse a documentação da API pelo Swagger em http://localhost:xxxx/swagger/index.html.
 
 # Endpoints
